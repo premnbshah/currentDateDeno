@@ -22,7 +22,7 @@ async function handler(req: Request): Promise<Response> {
     const currentTime = getCurrentISTDateTime();
     return new Response(
       JSON.stringify({
-        datetime: currentTime,
+        date: currentTime,
         timezone: "IST",
         timestamp: new Date().toISOString(),
       }),
